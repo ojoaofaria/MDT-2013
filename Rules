@@ -1,0 +1,38 @@
+[Settings]
+Priority=Default
+Properties=MyCustomProperty
+
+[Default]
+OSInstall=Y
+TimeZoneName=E. South America Standard Time
+SkipTimeZone=YES
+SkipLocaleSelection=YES
+UILonguage=pt-BR
+UserLocale=pt-BR
+KeyboardLocale=0416:00010416
+HideShell=YES
+SkipCapture=NO
+SkipAdminPassword=YES
+SkipProductKey=YES
+SkipBitLocker=YES
+SkipAppsOnUpgrade=NO
+SkipComputerName=NO
+SkipDomainMembership=NO
+SkipUserData=NO
+SkipLocaleSelection=YES
+SkipTaskSequence=NO
+SkipSummary=YES
+SkipFinalSummary=YES
+
+UserExit=UserExit.vbs
+OSDComputerName=#GetOfflineComputername()#
+
+UserDataLocation=NETWORK
+UDShare=\\brssp-vw-up01\USMT
+UDDir=%OSDComputerName%
+
+ScanStateArgs=/v:5 /o /c
+USMTMigFiles001=MigApp.xml
+USMTMigFiles002=MigUser.xml
+
+LoadStateArgs=/v:5 /c /lac
